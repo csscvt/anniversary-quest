@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#17132d">
+  <title>Anniversary Quest 💖</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="stars" aria-hidden="true"></div>
+  <main class="game-card">
+    <div class="topline"><span class="pixel-heart">♥</span> BEALY BOY <span class="dot">●</span> ANNIVERSARY QUEST</div>
+
+    <section id="welcome-screen" class="screen">
+      <div class="badge">✦ PRIORITÉ ABSOLUE ✦</div>
+      <div class="big-heart" aria-hidden="true">💖</div>
+      <p class="eyebrow">UN MESSAGE TRÈS IMPORTANT…</p>
+      <h1>Une mission<br><span>t'attend.</span></h1>
+      <p class="intro">La meilleure personne de la Terre (moi) a préparé quelque chose pour toi. Mais avant ça, prière d'accepter la mission…</p>
+      <button id="start-button" class="button button-primary">DÉMARRER LA MISSION <span>▶</span></button>
+      <p class="tiny-note">⚠️ Toute tentative de refus sera enregistrée.</p>
+    </section>
+
+    <section id="invite-screen" class="screen hidden" aria-live="polite">
+      <div class="level-label"><span>QUÊTE N° 01</span><span id="attempt-counter">TENTATIVES : 0</span></div>
+      <div class="big-heart pulse" aria-hidden="true">💘</div>
+      <p class="eyebrow">CONVOCATION OFFICIELLE</p>
+      <h2>Tu es invité à…</h2>
+      <p class="secret-title">UN ÉVÉNEMENT SECRET (c faux c'est ton anniversaire)</p>
+      <p class="intro">J'ai réservé quelque chose pour toi. Le programme ? Acceptes et tu verras. La personne qui t'invite ? La femme de ta vie </p>
+      <p id="tease-message" class="tease">Dons stp Bealy, acceptes sinon conséquences</p>
+      <div class="button-area" id="button-area">
+        <button id="yes-button" class="button button-primary yes-button">OUI C'EST BON</button>
+        <button id="no-button" class="button button-secondary no-button">WHO ARE U WLH</button>
+      </div>
+      <p class="tiny-note">Système anti-refus activé <span class="loading-dots">•••</span></p>
+    </section>
+
+    <section id="success-screen" class="screen hidden" aria-live="polite">
+      <div class="win-label">★ QUÊTE ACCOMPLIE ★</div>
+      <div class="big-heart victory-heart" aria-hidden="true">🕺🏽🕺🏽</div>
+      <p class="eyebrow">BRAVOOO BEALY BOY</p>
+      <h1>Je savais que<br><span>tu dirais oui</span></h1>
+      <p class="intro">Tu viens officiellement d'accepter l'invitation à ton anniversaire (t'avais juste pas le choix mec)</p>
+      <div class="details-box">
+        <p class="details-heading">📅 LES INFOS DE TA MISSION</p>
+        <div class="detail-row"><span>Date</span><strong>Samedi 24 octobre 2026</strong></div>
+        <div class="detail-row"><span>Heure</span><strong>Sois prêt vers14 h 00</strong></div>
+        <div class="detail-row"><span>Lieu</span><strong class="locked">🔒 TOP SECRET</strong></div>
+      </div>
+      <p class="love-note">Le lieu reste secret pour le moment… mais une chose est sûre : j'ai TROP TROP hâte ! Je t'aime fort ❤️</p>
+      <button id="replay-button" class="button button-secondary">REVOIR LA MISSION ↻</button>
+    </section>
+    <footer><span>FAIS AVEC ♥</span><span>VERSION 1.0</span></footer>
+  </main>
+  <div id="confetti-layer" aria-hidden="true"></div>
+  <script src="script.js"></script>
+</body>
+</html>
